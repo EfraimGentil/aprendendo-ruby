@@ -1,7 +1,12 @@
 require 'builder'
 
+def getFile
+ File.open("cadastro.xml" , "w")
+end
+
 def criarXml
- xml = Builder::XmlMarkup.new( :indent => 2)
+ f = getFile
+ xml = Builder::XmlMarkup.new( :target => f , :indent => 2 )
  xml.instruct! :xml, :encoding => "UTF-8"
  xml.cadastro do |c|
    c.usuario do |u|
@@ -12,8 +17,5 @@ def criarXml
  end
 end
 
+#getFile
 puts criarXml
-
-f = File.open("cadastro.xml" , "w")
-f.puts( criarXml )
-f.close
