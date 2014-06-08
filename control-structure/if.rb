@@ -1,0 +1,11 @@
+# encoding: utf-8
+puts "You can create a conditional check in ruby in the"
+puts "following way"
+puts "@age = 17"
+puts "if @age < 18 "
+puts "  puts 'You are underage'"
+puts "end"
+puts "-------------------------------------------------"
+puts "You can also create in a single line"
+puts "@age = 17"
+puts "if @age < 18 then puts 'You are underage' end"

@@ -16,3 +16,11 @@ puts "for i in @your_array do"
 puts "  puts i  #will print from 1 to 10"
 puts "end"
 puts "--------------------------------------------------"
+puts "From a hash"
+puts "The main diference is that the for receive 2 values"
+puts "the key and the value, as you can see in the example "
+puts "@my_hash = { :key1 => 'Value1' , :key2 => 'Value2' }"
+puts "for key, val in @my_hash do"
+puts '   puts "Key:   #{key}"'
+puts '   puts "Value: #{val}"'
+puts "end"

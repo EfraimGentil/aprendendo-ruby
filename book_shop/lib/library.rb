@@ -1,14 +1,17 @@
 # encoding: utf-8
 class Library
 
-    attr_reader :library
-
     def initialize
-        @library = []
+        @books = {}
     end
 
     def add_book( book )
-        @library << book
+        @books[book.category] ||= []
+        @books[book.category] << book
+    end
+
+    def books
+        @books.values.flatten
     end
 
 
