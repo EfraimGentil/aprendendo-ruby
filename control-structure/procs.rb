@@ -1,7 +1,10 @@
 # encoding: utf-8
 puts "########## PROCS ##############"
 puts "Procs is a way that you can store a block in a variable"
-puts "that variable is from the type Proc and you can instantiate like"
+puts "that variable is from the type Proc, if a block in a proc"
+puts "have a return it will interupt the proct and the atual "
+puts "method and return whats the proc have returned"
+puts " and you can instantiate like"
 puts "#########"
 puts " my_proc = Proc.new do |lol|"
 puts "    puts lol"
