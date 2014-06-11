@@ -1,0 +1,22 @@
+# encoding: utf-8
+puts "A block is a piece of code that you can send in a function"
+puts "like in the method 'each' from a array"
+puts "[1,2].each{ |n| puts n }"
+puts "You can create your wow blocks to be executed like"
+puts "########"
+puts " def execute_my_block"
+puts "   yield"
+puts " end"
+puts "########"
+puts "with that you cant call your block like"
+puts "execute_my_block { puts 'Do something crazy' } "
+puts "The problem here is if i do not passa a block "
+puts "it will throws a exception 'No blcok given' "
+puts "so is better if you aways verify if a block is given"
+puts "########"
+puts " def execute_my_block"
+puts "   yield if block_given?"
+puts " end"
+puts "########"
+
+
