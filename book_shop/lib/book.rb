@@ -2,8 +2,10 @@
 class Book
 	
     attr_accessor :price , :category , :isnb
+    attr_reader :title
 
-    def initialize ( author , isnb = "1" , number_of_pages, price , category )
+    def initialize (title, author , isnb = "1" , number_of_pages, price , category )
+        @title = title;
         @author = author
         @isnb = isnb
         @number_of_pages = number_of_pages
