@@ -1,27 +1,34 @@
 # encoding: utf-8
 class Library
 
+    include Enumerable
+
     def initialize
         @file_database = FileDatabase.new
     end
 
-    def add_book( book )
-        save_in_file book do
-            books << book
-        end
+    def add_media( media )
+        save_in_file media do
+            medias << media
+        end if media.kind_of? Media
     end
 
-    def books_by_category( category )
-        books.select{ |book| book.category == category } 
+    def medias_by_category( category )
+        medias.select{ |media| media.category == category } 
     end
 
-    def books
-        @books ||= @file_database.load
+    def medias
+        @medias ||= @file_database.load
+    end
+
+    #Needed to execute the enumerable methods included in the mixin
+    def each
+        medias.each{ |media| yield media }
     end
 
     private 
-        def save_in_file ( book )
-            @file_database.save book
+        def save_in_file ( media )
+            @file_database.save media
             yield
         end
 

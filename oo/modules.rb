@@ -1,6 +1,8 @@
 # encoding: utf-8
 puts "In ruby you can also create modules, with that you avoid conflicts"
-puts "with other classes with same name, to create a module: "
+puts "with other classes with same name, modules can't be instantiated. "
+puts "the idea of the module is to separate the classes in diferents    "
+puts "namespaces. To create a module:                                   "
 puts "------------------------------------------------------------------"
 puts "module DarkForce"
 puts "   class Warrior"
