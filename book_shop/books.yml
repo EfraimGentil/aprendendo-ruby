@@ -1,0 +1,24 @@
+--- !ruby/object:Book
+title: Title
+author: Haduken
+isnb: '1'
+number_of_pages: 200
+price: 20.0
+category: :master_of_universe
+
+--- !ruby/object:Book
+title: Title
+author: Haduken
+isnb: '1'
+number_of_pages: 200
+price: 20.0
+category: :master_of_universe
+
+--- !ruby/object:Book
+title: This is a book
+author: Efraim Gentil
+isnb: '1'
+number_of_pages: 130
+price: 200.0
+category: :haduken
+

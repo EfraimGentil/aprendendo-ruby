@@ -2,17 +2,27 @@
 class Library
 
     def initialize
-        @books = {}
+        @file_database = FileDatabase.new
     end
 
     def add_book( book )
-        @books[book.category] ||= []
-        @books[book.category] << book
+        save_in_file book do
+            books << book
+        end
+    end
+
+    def books_by_category( category )
+        books.select{ |book| book.category == category } 
     end
 
     def books
-        @books.values.flatten
+        @books ||= @file_database.load
     end
 
+    private 
+        def save_in_file ( book )
+            @file_database.save book
+            yield
+        end
 
 end
