@@ -1,10 +1,10 @@
 # encoding: utf-8
-class Book
-	
-    attr_accessor :price , :category , :isnb
-    attr_reader :title
+class Book < Media
+
+    attr_accessor :category , :isnb
 
     def initialize (title, author , isnb = "1" , number_of_pages, price , category )
+        super()
         @title = title;
         @author = author
         @isnb = isnb

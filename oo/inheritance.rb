@@ -1,0 +1,10 @@
+# encoding: utf-8
+puts "To inherit a class in ruby you have to user the operator '<'"
+puts "------------------------------------------------------------"
+puts "class Person"
+puts "end"
+puts "class Professor < Person"
+puts "end"
+puts "------------------------------------------------------------"
+puts "With that all the attributes of the Person will be available"
+puts "in the Professor class"
