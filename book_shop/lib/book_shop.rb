@@ -1,4 +1,5 @@
 # encoding: utf-8
+require File.expand_path('lib/format_currency')
 require File.expand_path('lib/media')
 require File.expand_path('lib/dvd')
 require File.expand_path('lib/book')

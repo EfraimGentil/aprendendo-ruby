@@ -1,4 +1,7 @@
 class DVD < Media
+    extend FormatCurrency
+
+    format_currency :price
 
     def initialize(title , price , category)
         super()
