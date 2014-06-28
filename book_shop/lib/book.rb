@@ -1,7 +1,7 @@
 # encoding: utf-8
 class Book < Media
 
-    attr_accessor :category , :isnb
+    attr_accessor :category , :isnb, :title , :author , :number_of_pages , :price
 
     def initialize (title, author , isnb = "1" , number_of_pages, price , category )
         super()

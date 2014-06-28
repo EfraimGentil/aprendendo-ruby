@@ -1,0 +1,6 @@
+--- !ruby/object:DVD
+discount: 0.1
+id: 1
+price: 100.0
+title: windows
+category: :software

@@ -1,0 +1,9 @@
+--- !ruby/object:Book
+discount: 0.1
+id: 1
+title: Efective Ruby
+author: Mothe of
+isnb: 1
+number_of_pages: 500
+price: 140.99
+category: :ok_thest

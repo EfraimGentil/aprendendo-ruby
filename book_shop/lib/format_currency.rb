@@ -1,5 +1,7 @@
 module FormatCurrency 
 
+    # * define that this method will receive N values
+    # this is how you define a varargs in ruby
     def format_currency(*variables)
         variables.each do |name|
             define_method("#{name}_formated") do
