@@ -1,0 +1,7 @@
+--- !ruby/object:DVD
+id: 4
+destroyed: false
+new_record: false
+title: teste dVD 4
+price: 99.0
+category: :teste

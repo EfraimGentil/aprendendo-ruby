@@ -1,6 +1,7 @@
 --- !ruby/object:DVD
-discount: 0.1
+price: 25.0
+title: Haduken Book
+category: :category_unkwon
 id: 1
-price: 100.0
-title: windows
-category: :software
+destroyed: false
+new_record: false

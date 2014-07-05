@@ -1,14 +1,9 @@
 class DVD < Media
+    include ActiveFile
     extend FormatCurrency
 
     format_currency :price
-
-    def initialize(title , price , category)
-        super()
-        @price = price
-        @title = title
-        @category = category
-    end
+    fields :title , :price , :category
 
     def to_s
         %Q{ Tittle: #{@title}, Value: #{@price} }

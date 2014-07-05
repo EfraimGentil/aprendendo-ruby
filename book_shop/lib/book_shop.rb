@@ -1,7 +1,9 @@
 # encoding: utf-8
 require File.expand_path('lib/format_currency')
 require File.expand_path('lib/document_not_found')
+require File.expand_path('lib/active_file')
 require File.expand_path('lib/media')
+require File.expand_path('lib/magazine')
 require File.expand_path('lib/dvd')
 require File.expand_path('lib/book')
 require File.expand_path('lib/library')

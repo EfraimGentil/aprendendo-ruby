@@ -1,17 +1,8 @@
 # encoding: utf-8
 class Book < Media
-
-    attr_accessor :category , :isnb, :title , :author , :number_of_pages , :price
-
-    def initialize (title, author , isnb = "1" , number_of_pages, price , category )
-        super()
-        @title = title;
-        @author = author
-        @isnb = isnb
-        @number_of_pages = number_of_pages
-        @price = price
-        @category = category
-    end
+    include ActiveFile
+    
+    fields :category , :isnb, :title , :author , :number_of_pages , :price
 
     def to_s
         "Book: { author: #{@author}, isnb: #{@isnb}, number_of_pages: #{@number_of_pages}, price: #{@price} }"

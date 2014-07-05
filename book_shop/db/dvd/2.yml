@@ -1,0 +1,6 @@
+--- !ruby/object:DVD
+id: 2
+destroyed: false
+new_record: false
+title: AHHEHEHEHEHH
+price: 23.5

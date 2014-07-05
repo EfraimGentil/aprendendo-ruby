@@ -1,0 +1,6 @@
+--- !ruby/object:Magazine
+id: 2
+destroyed: false
+new_record: false
+title: Playboy
+price: 10.0

@@ -1,10 +1,6 @@
 class Magazine < Media
+    include ActiveFile
 
-    def initialize ( title , price)
-        @title = title
-        @price = price
-    end 
-
-    
+    fields :title, :price
 
 end
